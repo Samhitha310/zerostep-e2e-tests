@@ -2,7 +2,8 @@ import { readFileSync } from 'fs';
 import { test, expect } from '@playwright/test';
 
 // Read and parse the JSON file
-const configPath = 'C:\Users\hanee\OneDrive\Documents\Desktop\zerostep\config\zerostep.config.json';
+const configPath = 'C:\\Users\\hanee\\OneDrive\\Documents\\Desktop\\zerostep\\config\\zerostep.config.json';
+
 const rawConfig = readFileSync(configPath, 'utf-8');
 const config = JSON.parse(rawConfig);
 
